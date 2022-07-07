@@ -31,26 +31,26 @@ export default function Vehicles() {
               aria-label="dashboard"
               className="relative px-4 py-3 flex items-center space-x-4 rounded-xl "
             >
-              <img src="/icons/home-gray.svg" />
-              <span className="-mr-1 text-gray-600">Car owners</span>
+              {/* <img src="/icons/home-gray.svg" /> */}
+              <span className="-mr-1 text-black-700">Car owners</span>
             </Link>
 
             <Link
               to={"/vehicles"}
-              className="px-4 py-3 flex items-center space-x-4 rounded-md text-primary group"
+              className="px-4 py-3 flex items-center space-x-4 rounded-md text-[#FB3131] group"
             >
-              <img src="/icons/vehicle-blue.svg" />
-              <span className="group-hover:text-gray-700">Vehicle</span>
+              {/* <img src="/icons/vehicle-blue.svg" /> */}
+              <span className="group-hover:text-red-700">Vehicle</span>
             </Link>
           </ul>
         </div>
       </aside>
       <div className="ml-auto mb-6 lg:w-[75%] xl:w-[80%] 2xl:w-[85%]">
-        <div className="sticky z-10 top-0 h-16 border-b bg-white lg:py-2.5">
+        <div className="sticky z-10 top-0 h-16 border-b text-[#FB3131] lg:py-2.5">
           <div className="px-6 flex items-center justify-between space-x-4 2xl:container">
             <h5
               hidden
-              className="text-2xl text-gray-600 font-semibold lg:block"
+              className="text-2xl text-[#FB3131]-600 font-semibold lg:block"
             >
               Welcome back
             </h5>
@@ -58,7 +58,7 @@ export default function Vehicles() {
             <div className="flex space-x-4">
               <button
                 aria-label="chat"
-                className="w-10 h-10  flex items-center justify-center rounded-xl border bg-gray-100 focus:bg-gray-100 active:bg-gray-200"
+                className="w-10 h-10  flex items-center justify-center rounded-xl border bg-[#FB3131]-100 focus:bg-[#FB3131]-100 active:bg-[#FB3131]-200"
               >
                 <img src="/icons/logout.svg" alt="tailus logo" />
               </button>
@@ -80,9 +80,9 @@ export default function Vehicles() {
                 <div className="lg:ml-40 ml-10 space-x-8">
                   <button
                     onClick={() => navigate("/new-vehicle")}
-                    className="bg-primary px-5 py-2 rounded-2xl text-white font-semibold tracking-wide cursor-pointer"
+                    className="bg-[#FB3131] px-5 py-2 rounded-2xl text-white font-semibold tracking-wide cursor-pointer"
                   >
-                    Register vehicle
+                    ADD A NEW VEHICLE
                   </button>
                 </div>
               </div>
@@ -157,7 +157,7 @@ export default function Vehicles() {
 
                           <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                             <p className="text-gray-900 whitespace-no-wrap">
-                              Kalisa Emmanuel
+                              Stecie Niyonzima
                             </p>
                           </td>
                         </tr>
@@ -221,11 +221,11 @@ export default function Vehicles() {
                       Showing 1 to 4 of 50 Entries
                     </span>
                     <div className="inline-flex mt-2 xs:mt-0">
-                      <button className="text-sm text-lightblue transition duration-150 hover:bg-primary bg-primary font-semibold py-2 px-4 rounded-l">
+                      <button className="text-sm text-lightblue transition duration-150 hover:bg-[#FB3131] bg-[#FB3131] font-semibold py-2 px-4 rounded-l">
                         Prev
                       </button>
                       &nbsp; &nbsp;
-                      <button className="text-sm text-lightblue transition duration-150 hover:bg-primary bg-primary font-semibold py-2 px-4 rounded-r">
+                      <button className="text-sm text-lightblue transition duration-150 hover:bg-[#FB3131] bg-[#FB3131] font-semibold py-2 px-4 rounded-r">
                         Next
                       </button>
                     </div>

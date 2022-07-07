@@ -17,7 +17,7 @@ export default function LinkToOwner() {
           <form action="" className="flex flex-col gap-4 ">
             <label
               htmlFor="owner"
-              class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
+              class="block mb-2 text-sm font-medium text-red-900 dark:text-red-400"
             >
               Vehicle owner
             </label>
@@ -34,7 +34,7 @@ export default function LinkToOwner() {
 
             <button
               type="submit"
-              className="rounded-2xl font-semibold flex justify-center items-center mt-2 w-full text-white bg-primary p-3 "
+              className="rounded-2xl font-semibold flex justify-center items-center mt-2 w-full text-red bg-success p-3 "
             >
               Register vehicle
             </button>

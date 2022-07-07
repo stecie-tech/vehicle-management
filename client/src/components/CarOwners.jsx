@@ -30,18 +30,18 @@ export default function Dashboard() {
             <Link
               to={"/owners"}
               aria-label="dashboard"
-              className="relative px-4 py-3 flex items-center space-x-4 rounded-xl text-primary "
+              className="relative px-4 py-3 flex items-center space-x-4 rounded-xl text-red "
             >
-              <img src="/icons/home.svg" />
-              <span className="-mr-1">Car owners</span>
+              {/* <img src="/icons/home.svg" /> */}
+              <span className="-mr-1 text-red-700">Car owners</span>
             </Link>
 
             <Link
               to={"/vehicles"}
-              className="px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group"
+              className="px-4 py-3 flex items-center space-x-4 rounded-md text-red-600 group"
             >
-              <img src="/icons/vehicle.svg" />
-              <span className="group-hover:text-gray-700">Vehicle</span>
+              {/* <img src="/icons/vehicle.svg" /> */}
+              <span className="-mr-1 text-black-700">Vehicle</span>
             </Link>
           </ul>
         </div>
@@ -51,7 +51,7 @@ export default function Dashboard() {
           <div className="px-6 flex items-center justify-between space-x-4 2xl:container">
             <h5
               hidden
-              className="text-2xl text-gray-600 font-semibold lg:block"
+              className="text-2xl text-red-600 font-semibold lg:block"
             >
               Welcome back
             </h5>
@@ -59,7 +59,7 @@ export default function Dashboard() {
             <div className="flex space-x-4">
               <button
                 aria-label="chat"
-                className="w-10 h-10  flex items-center justify-center rounded-xl border bg-gray-100 focus:bg-gray-100 active:bg-gray-200"
+                className="w-10 h-10  flex items-center justify-center rounded-xl border bg-red-100 focus:bg-red-100 active:bg-red-200"
               >
                 <img src="/icons/logout.svg" alt="tailus logo" />
               </button>
@@ -76,14 +76,14 @@ export default function Dashboard() {
         <div className="px-6 pt-6 2xl:container">
           {/* grid gap-6 md:grid-cols-2 lg:grid-cols-3 */}
           <div className="font-semibold">
-            <div className="bg-white p-8 rounded-md w-full">
+            <div className="bg-red p-8 rounded-md w-full">
               <div className=" flex items-center justify-end pb-6">
                 <div className="lg:ml-40 ml-10 space-x-8">
                   <button
                     onClick={() => navigate("/new-owner")}
-                    className="bg-primary px-5 py-2 rounded-2xl text-white font-semibold tracking-wide cursor-pointer"
+                    className="bg-[#FB3131] px-5 py-2 rounded-2xl text-danger font-semibold tracking-wide cursor-pointer"
                   >
-                    Register new vehicle owner
+                    ADD A NEW CAR OWNER
                   </button>
                 </div>
               </div>
@@ -152,18 +152,18 @@ export default function Dashboard() {
                   </div>
 
                   <div className="px-5 py-5 bg-white border-t flex flex-col xs:flex-row items-center xs:justify-between">
-                    <span className="text-xs xs:text-sm text-gray-900">
+                     <span className="text-xs xs:text-sm text-gray-900">
                       Showing 1 to 10 of {data?.length} Entries
                     </span>
                     <div className="inline-flex mt-2 xs:mt-0">
-                      <button className="text-sm text-lightblue transition duration-150 hover:bg-primary bg-primary font-semibold py-2 px-4 rounded-l">
+                      <button className="text-sm text-white transition duration-150 hover:bg-[#FB3131] bg-[#FB3131] font-semibold py-2 px-4 rounded-l">
                         Prev
                       </button>
                       &nbsp; &nbsp;
-                      <button className="text-sm text-lightblue transition duration-150 hover:bg-primary bg-primary font-semibold py-2 px-4 rounded-r">
+                      <button className="text-sm text-lightblue transition duration-150 hover:bg-[#FB3131] bg-[#FB3131] font-semibold py-2 px-4 rounded-r">
                         Next
                       </button>
-                    </div>
+                    </div> 
                   </div>
                 </div>
               </div>

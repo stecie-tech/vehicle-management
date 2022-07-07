@@ -43,7 +43,7 @@ export default function NewCarOwner() {
     <PopupMolecule
       open={showPopup}
       title={"Register New Car owner"}
-      onClose={() => navigate(-1)}
+      onClose={() => navigate(-1)}  
     >
       <div className="px-[10px]">
         <form
@@ -62,7 +62,7 @@ export default function NewCarOwner() {
               value={values.names}
               name="names"
               id="names"
-              placeholder="John Doe"
+              placeholder="Stecie Niyonzima"
               required
               className=" rounded-2xl border border-[#DEE2E6]  text-gray-900 sm:text-sm outline-none focus:ring-blue-500 block w-[346px] p-2.5"
             />
@@ -72,7 +72,7 @@ export default function NewCarOwner() {
               htmlFor="email"
               className="block text-sm font-semibold text-gray-900"
             >
-              owner address
+              Owner address
             </label>
             <input
               onChange={handleChange}
@@ -118,7 +118,7 @@ export default function NewCarOwner() {
           </div>
           <button
             type="submit"
-            className="rounded-2xl font-semibold flex justify-center items-center mt-2 w-full text-white bg-primary p-3 "
+            className="rounded-2xl font-semibold flex justify-center items-center mt-2 w-full text-white bg-[#FB3131] p-3 "
           >
             Register car owner
           </button>

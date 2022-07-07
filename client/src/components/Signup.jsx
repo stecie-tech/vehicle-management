@@ -43,8 +43,8 @@ export default function Signup() {
         <div className="w-full md:flex">
           <div className="hidden w-1/2 h-screen items-center justify-center bg-lightblue py-10 px-10 md:flex md:flex-col md:gap-[33px]">
             <img src="/img/logo.png" alt="rra logo" srcset="" />
-            <p className="text-primary font-bold tex-base">
-              Welcome to <br />
+            <p className=" font-bold tex-base">
+              Welcome to 
               Vehicle management system
             </p>
           </div>
@@ -57,7 +57,7 @@ export default function Signup() {
                     {" "}
                     Already have an account?
                   </span>{" "}
-                  <Link className="text-primary font-semibold" to="/">
+                  <Link className="text-[#FB3131] font-semibold" to="/">
                     Login
                   </Link>
                 </p>
@@ -74,7 +74,7 @@ export default function Signup() {
                   <input
                     onChange={handleChange}
                     name="names"
-                    placeholder="John Doe"
+                    placeholder="Stecie Niyonzima"
                     required
                     className=" rounded-2xl border border-[#DEE2E6]  text-gray-900 sm:text-sm outline-none focus:ring-blue-500 block w-[346px] p-2.5"
                   />
@@ -150,7 +150,7 @@ export default function Signup() {
 
               <button
                 type="submit"
-                className="font-semibold rounded-2xl flex justify-center items-center mb-20 mt-4 w-full text-white bg-primary p-3 "
+                className="font-semibold rounded-2xl flex justify-center items-center mb-20 mt-4 w-full text-white bg-[#FB3131] p-3 "
               >
                 SignUp
               </button>

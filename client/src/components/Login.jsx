@@ -34,25 +34,25 @@ export default function Login() {
 
   return (
     <div>
-      <div className="w-full overflow-hidden rounded-3xl bg-white">
+      <div className="w-full overflow-hidden rounded-3xl bg-red">
         <div className="w-full md:flex">
-          <div className="hidden w-1/2 items-center justify-center  h-screen bg-lightblue md:flex md:flex-col md:gap-[33px]">
+          <div className="hidden w-1/2 items-center justify-center  h-screen bg-lightred md:flex md:flex-col md:gap-[33px]">
             <img src="/img/logo.png" alt="rra logo" width={300} />
-            <p className="text-primary font-bold tex-base">
-              Welcome to <br />
+            <p className="text-red font-bold text-base">
+              Welcome to 
               Vehicle management system
             </p>
           </div>
           <div className="w-full py-10 px-5  md:flex md:justify-center md:items-center  md:px-10">
             <form className="md:ml-[50px]" onSubmit={handleSubmit}>
               <div className="mb-10 flex flex-col gap-4">
-                <h1 className="text-3xl font-bold text-black">Login</h1>
+                <h1 className="text-3xl font-bold text-danger">Login</h1>
                 <p className="flex gap-1 text-base">
                   <span className="text-[#ADB5BD] font-semibold">
                     {" "}
                     Already have an account?
                   </span>{" "}
-                  <Link className="text-primary font-semibold" to="/signup">
+                  <Link className="text-[#FB3131] font-semibold" to="/signup">
                     Sign up
                   </Link>
                 </p>
@@ -70,8 +70,8 @@ export default function Login() {
                     onChange={handleChange}
                     name="email"
                     id="email"
-                    placeholder="john@gmail.com"
-                    className=" rounded-2xl border border-gray-300 text-black sm:text-sm outline-none focus:ring-blue-500 block w-[346px] p-2.5"
+                    placeholder="stecie@gmail.com"
+                    className=" rounded-2xl border border-gray-300 text-black sm:text-sm outline-none block w-[346px] p-2.5"
                   />
                 </div>
 
@@ -89,14 +89,14 @@ export default function Login() {
                     id="password"
                     type="password"
                     placeholder="Enter password"
-                    className=" rounded-2xl border border-gray-300 text-black sm:text-sm outline-none focus:ring-blue-500 block w-[346px] p-2.5"
+                    className=" rounded-2xl border border-gray-300 text-black sm:text-sm outline-none block w-[346px] p-2.5"
                   />
                 </div>
               </div>
 
               <button
                 type="submit"
-                className="rounded-2xl font-semibold flex justify-center items-center mb-20 mt-4 w-full text-white bg-primary p-3 "
+                className="rounded-2xl font-semibold flex justify-center items-center mb-20 mt-4 w-full text-white bg-[#FB3131] p-3 "
               >
                 Login
               </button>
